@@ -1,0 +1,76 @@
+/*
+1st block : background: #A3C695;
+2nd block: background: #AAAFA8;
+3rd block:  background: #D6BB86;
+4th block: background: #C5CEF4;
+5th block:  background: #B1DEEE;
+6th block: background: #4EA65E;
+*/
+
+/* Grid styling */
+.main-grid {
+  display: grid;
+  margin-left: 4em;
+  margin-right: 4em;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.1fr 1.2fr 1.2fr 1.2fr;
+  grid-template-areas: 
+  "owner menu"
+  "img1 img2"
+  "img3 img4"
+  "img5 img6";
+  grid-gap: 2em 2em;
+}
+
+img {
+  width: 630px;
+  height: 340px;
+}
+
+.project-tile {
+  position: relative;
+}
+
+
+.project-tile .backgound-image-text {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border: 2px solid white;
+}
+
+.project-tile .project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.project-image:hover {
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  z-index: 0;
+}
+
+
+#img-1 {grid-area: img1;}
+#img-2 {grid-area: img2;}
+#img-3 {grid-area: img3;}
+#img-4 {grid-area: img4;}
+#img-5 {grid-area: img5;}
+#img-6 {grid-area: img6;}
+
+#owner {grid-area: owner; font-family: 'Pacifico', cursive; font-size:2vw; padding-top: 30px; padding-bottom: 20px;}
+#menu {grid-area: menu; text-align: right; padding-top: 30px; padding-bottom: 30px;}
+#menu a {color: #B6B4B3; font-family: 'Josefin Sans', sans-serif; font-size:1.5vw; text-decoration: none;}
+
+h1 {
+  font-family: 'Pacifico', cursive; font-size:2vw; padding-top: 30px; padding-bottom: 20px;
+}
+.featured-image-collage {text-align: center;}
+.featured-image-collage img { width: 300px; height: 250px; border: 2px solid yellow;}
+
+
+
+

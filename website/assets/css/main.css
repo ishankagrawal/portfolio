@@ -1,0 +1,64 @@
+/*
+Work.html
+*/
+
+/* Grid styling */
+.page-grid {
+  display: grid;
+  margin-right: 4em;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.1fr 1.2fr 1.2fr 1.2fr;
+  grid-template-areas: 
+  "owner menu"
+  "img1 img2"
+  "img3 img4"
+  "img5 img6";
+  grid-gap: 4em 2em;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-1,
+#img-2,
+#img-3,
+#img-4,
+#img-5,
+#img-6 {
+  padding: 10px 10px 10px 10px;
+}
+
+#img-1 { grid-area: img1;}
+#img-2 {grid-area: img2;}
+#img-3 {grid-area: img3;}
+#img-4 {grid-area: img4;}
+#img-5 {grid-area: img5;}
+#img-6 {grid-area: img6;}
+
+#img-1 .image {position: absolute; z-index: 10; opacity:1; transition: opacity 0.2s ease-in-out;}
+#img-1:hover .image {opacity:0;}
+#img-1 .project-desc {z-index: 9; opacity:1; position: relative;}
+
+#img-2 .image {position: absolute; z-index: 10; opacity:1; transition: opacity 0.2s ease-in-out;}
+#img-2:hover .image {opacity:0;}
+#img-2 .project-desc {z-index: 9; opacity:1; position: relative;}
+
+#img-3 .image {position: absolute; z-index: 10; opacity:1; transition: opacity 0.2s ease-in-out;}
+#img-3:hover .image {opacity:0;}
+#img-3 .project-desc {z-index: 9; opacity:1; position: relative;}
+
+#img-4 .image {position: absolute; z-index: 10; opacity:1; transition: opacity 0.2s ease-in-out;}
+#img-4:hover .image {opacity:0;}
+#img-4 .project-desc {z-index: 9; opacity:1; position: relative;}
+
+#img-5 .image {position: absolute; z-index: 10; opacity:1; transition: opacity 0.2s ease-in-out;}
+#img-5:hover .image {opacity:0;}
+#img-5 .project-desc {z-index: 9; opacity:1; position: relative;}
+
+#img-6 .image {position: absolute; z-index: 10; opacity:1; transition: opacity 0.2s ease-in-out;}
+#img-6:hover .image {opacity:0;}
+#img-6 .project-desc {z-index: 9; opacity:1; position: relative;}
+
